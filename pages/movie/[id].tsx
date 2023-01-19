@@ -35,7 +35,7 @@ function Video({ movie, body, error }: any) {
 
   const opts: YouTubeProps["opts"] = {
     height: "270",
-    width: "480",
+    width: "380",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
@@ -43,11 +43,11 @@ function Video({ movie, body, error }: any) {
   };
 
   return (
-    <div className="">
+    <div className="  bg-slate-800">
       <Head>
         <title>{option1.name}</title>
       </Head>
-      <section className="flex flex-col  justify-center  items-center bg-slate-800 gap-10 h-[140vh]">
+      <section className="flex flex-col  justify-center  items-center gap-10 h-[140vh]">
         <Image src={logo2} alt="logo" width={200} height={200} />
 
         <YouTube
@@ -66,7 +66,7 @@ function Video({ movie, body, error }: any) {
           onReady={onPlayerReady}
         />
       </section>
-      <section className="flex flex-col  justify-center  items-center bg-slate-800 gap-10 h-[80vh]">
+      <section className="flex flex-col  justify-center  items-center gap-10 h-[80vh]">
         <div className="text-white lg:w-58 flex flex-col lg:justify-center lg:items-center w-[95vw]  lg:w-[35vw] ">
           <ul className="m-2  flex flex-col text-left">
             <h1 className="text-2xl mb-1 text-cyan-300">Facts</h1>
